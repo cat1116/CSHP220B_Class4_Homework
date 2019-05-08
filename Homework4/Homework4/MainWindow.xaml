@@ -1,0 +1,19 @@
+﻿<Window x:Class="Homework4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="165" Width="350">
+    <StackPanel x:Name="uxContainer">
+        <TextBlock Margin="20,20,0,0">Enter Zip/Postal Code:</TextBlock>
+
+        <TextBox x:Name="uxZip" Width="300" HorizontalAlignment="Left" Margin="20,0,0,0" TextChanged="UxZip_TextChanged" PreviewKeyDown="UxZip_PreviewKeyDown" DataObject.Pasting="UxZip_Pasting" >
+        </TextBox>
+
+
+        <Button x:Name="uxSubmit" IsEnabled="False" Width="300" HorizontalAlignment="Left" Margin="20,20,0,0">Submit</Button>
+
+    </StackPanel>
+</Window>
